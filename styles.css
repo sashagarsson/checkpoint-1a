@@ -1,0 +1,352 @@
+.signup,
+.signup1,
+.button1 {
+  color: #f78c81;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  background-color: #efccc8;
+}
+.signup1 {
+  border-top: #f78c81 2.5px dotted;
+}
+@media (min-width: 576px) {
+  .mainpicture {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-row: 1fr 1fr;
+    grid-column: 1fr;
+    grid-template-areas:
+      "main-pic"
+      "main-pic2";
+  }
+}
+@media (min-width: 992px) {
+  .mainpicture {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr, 1fr;
+    grid-template-areas: "main-pic main-pic2";
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav-links {
+  color: #f78c81;
+  padding: 30px;
+}
+.social {
+  padding-left: 20px;
+  display: grid;
+  grid-row: 1fr, 1fr, 1fr;
+  grid-column: 1fr, 1fr, 1fr;
+  grid-template-areas:
+    "instagramphoto facebookphoto linkedinphoto"
+    "instagram facebook linkedin";
+  padding-left: 25%;
+}
+.instagram {
+  grid-area: instagram;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+
+.instagramphoto {
+  grid-area: instagramphoto;
+}
+
+.facebookphoto {
+  grid-area: facebookphoto;
+}
+
+.linkedinphoto {
+  grid-area: linkedinphoto;
+}
+.facebookphoto,
+.linkedinphoto,
+.instagramphoto {
+  padding-left: 15px;
+}
+@media (min-width: 320px) {
+  .container {
+    padding-top: 75px;
+    padding-left: 25%;
+    display: grid;
+    grid-template-columns: 0.25fr 0.15fr 0.25fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "galleryimg1 . galleryimg2"
+      "galleryimg3 . galleryimg4"
+      "galleryimg5 . galleryimg6"
+      "galleryimg7 . galleryimg8"
+      "galleryimg9 . galleryimg10"
+      "galleryimg11 . galleryimg12"
+      "galleryimg13 . galleryimg14"
+      "galleryimg15 . .";
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    padding-top: 75px;
+    padding-left: 25%;
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "galleryimg1 galleryimg2 galleryimg3"
+      "galleryimg4 galleryimg5 galleryimg6"
+      "galleryimg7 galleryimg8 galleryimg9"
+      "galleryimg10 galleryimg11 galleryimg12"
+      "galleryimg13 galleryimg14 galleryimg15";
+  }
+}
+.galleryimg1 {
+  grid-area: galleryimg1;
+}
+
+.galleryimg2 {
+  grid-area: galleryimg2;
+}
+
+.galleryimg3 {
+  grid-area: galleryimg3;
+}
+
+.galleryimg4 {
+  grid-area: galleryimg4;
+}
+
+.galleryimg5 {
+  grid-area: galleryimg5;
+}
+
+.galleryimg6 {
+  grid-area: galleryimg6;
+}
+
+.galleryimg7 {
+  grid-area: galleryimg7;
+}
+
+.galleryimg8 {
+  grid-area: galleryimg8;
+}
+
+.galleryimg9 {
+  grid-area: galleryimg9;
+}
+
+.galleryimg10 {
+  grid-area: galleryimg10;
+}
+
+.galleryimg11 {
+  grid-area: galleryimg11;
+}
+
+.galleryimg12 {
+  grid-area: galleryimg12;
+}
+
+.galleryimg13 {
+  grid-area: galleryimg13;
+}
+
+.galleryimg14 {
+  grid-area: galleryimg14;
+}
+
+.galleryimg15 {
+  grid-area: galleryimg15;
+}
+
+@media (min-width: 320px) {
+  .aboutme {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aboutimage1"
+      "about1"
+      "aboutimage2"
+      "about2"
+      "aboutimage3"
+      "about3";
+  }
+}
+@media (min-width: 768px) {
+  .aboutme {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 40px 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aboutimage1 about1"
+      "about2 aboutimage2"
+      "aboutimage3 about3";
+  }
+}
+@media (min-width: 992px) {
+  .aboutme {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aboutimage1 about1"
+      "about2 aboutimage2"
+      "aboutimage3 about3";
+  }
+}
+.aboutimage1 {
+  grid-area: aboutimage1;
+}
+
+.aboutimage2 {
+  grid-area: aboutimage2;
+}
+
+.aboutimage3 {
+  grid-area: aboutimage3;
+}
+
+.about3 {
+  grid-area: about3;
+}
+
+.about2 {
+  grid-area: about2;
+}
+
+.about1 {
+  grid-area: about1;
+}
+
+.about1,
+.about2,
+.about3 {
+  padding-top: 12%;
+  line-height: 35px;
+  font-size: larger;
+}
+@media (min-width: 576px) {
+  .blog {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "blog1"
+      "blog2"
+      "blog3";
+  }
+}
+@media (min-width: 992px) {
+  .blog {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". blog1 . empty1 ."
+      ". empty2 . blog2 ."
+      ". blog3 . empty3 .";
+  }
+}
+.blog1 {
+  grid-area: blog1;
+}
+
+.blog2 {
+  grid-area: blog2;
+}
+
+.blog3 {
+  grid-area: blog3;
+}
+
+.empty3 {
+  grid-area: empty3;
+}
+
+.empty2 {
+  grid-area: empty2;
+}
+
+.empty1 {
+  grid-area: empty1;
+}
+.blog1,
+.blog2,
+.blog3 {
+  border: #f78c81 solid 2px;
+  border-radius: 100%;
+  width: 400px;
+  height: 300px;
+  background-color: #f78c81;
+  text-align: center;
+  font-size: larger;
+  padding-top: 15%;
+  padding-inline: 25%;
+}
+h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  text-align: center;
+  background-color: #efccc8;
+}
+h4 {
+  border-top: #f78c81 solid 2.5px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+form {
+  color: #f78c81;
+  text-align: center;
+}
+
+#message {
+  padding-bottom: 40px;
+}
+
+.contact {
+  padding: 20px;
+}
